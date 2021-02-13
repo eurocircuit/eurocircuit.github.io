@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+    <title>Euro-Circuit Technology Sdn Bhd Monitoring Form</title>
+    <!-- <link rel="stylesheet" href="AgentForm2.css"> -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: auto;
+  /* background: url("bg.png"), -webkit-linear-gradient(bottom, #0250c5, #d43f8d); */
+  background-color: #20bf55;
+  /* background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%); */
+}
+::selection{
+  color: #fff;
+  background: green;
+}
+.containerstep{
+  margin-top: 30px;
+  max-width: 658px;
+  background: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px 35px 10px 35px;
+  box-shadow: 0px 0px 20px #000000;
+}
+.container{
+    width: 90%;
+    max-width: 547px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #000000;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 30px;
+  }
+.containerstep header{
+  font-size: 35px;
+  color: green;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+.container .form-outer{
+  width: 100%;
+  overflow: hidden;
+}
+.container .form-outer form{
+  display: flex;
+  width: 500%;
+}
+.h-divider {
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 0;
+    width: 100%;
+    position: relative;
+  }
+  .h-divider .shadow {
+    overflow: hidden;
+    height: 20px;
+  }
+  .h-divider .shadow:after {
+    content: '';
+    display: block;
+    margin: -25px auto 0;
+    width: 100%;
+    height: 25px;
+    border-radius: 125px/12px;
+    box-shadow: 0 0 8px black;
+  }
+  hr.line {
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px green inset;
+  }
+.form-outer form .page{
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+.form-outer form .page .title{
+  text-align: left;
+  color: blue;
+  font-size: 25px;
+  font-weight: 500;
+}
+.form-outer form .page .field{
+  width: 80%; /* 565px */
+  height: 45px;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+.form-outer form .page .fieldclient{
+  width: 80%; /* 565px */
+  height: 45px;
+  margin: 45px 0;
+  margin-bottom: 529px;
+  display: flex;
+  position: relative;
+}
+.form-outer form .page .fieldproposed{
+  width: 80%; /* 565px */
+  height: 45px;
+  margin: 45px 0;
+  margin-bottom: 529px; /* 455px */
+  display: flex;
+  position: relative;
+}
+.form-outer form .page .fieldterminated{
+  width: 80%; /* 565px */
+  height: 45px;
+  margin: 45px 0;
+  margin-bottom: 155px; /* 133px */
+  display: flex;
+  position: relative;
+}
+.form-outer form .page .fieldbutton{
+  width: 98%;
+  height: 45px;
+  /* margin: 45px 0; */
+  display: flex;
+  position: relative;
+}
+form .page .field .label{
+  position: absolute;
+  top: -30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+form .page .fieldclient .label{
+  position: absolute;
+  top: -30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+form .page .fieldclient p{
+  position: absolute;
+  font-size: 15px;
+}
+form .page .fieldproposed .label{
+  position: absolute;
+  top: -30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+form .page .fieldproposed p{
+  position: absolute;
+  font-size: 15px;
+}
+form .page .fieldterminated .label{
+  position: absolute;
+  top: -30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+form .page .fieldterminated p{
+  position: absolute;
+  font-size: 15px;
+}
+form .page .field input,
+form .page .field select {
+  /* height: 100%; */
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  /* padding-left: 15px; */
+  font-size: 15px;
+  margin-top: 5px;
+  margin-right: 15px;
+  padding: 5px;
+}
+form .page .fieldclient textarea {
+  /* height: 100%; */
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  /* padding-left: 15px; */
+  font-size: 15px;
+  margin-top: 57px;
+  margin-right: 15px;
+  padding: 5px;
+}
+form .page .fieldproposed textarea {
+  /* height: 100%; */
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  /* padding-left: 15px; */
+  font-size: 15px;
+  margin-top: 57px; /* 34px */
+  margin-right: 15px;
+  padding: 5px;
+}
+form .page .fieldterminated textarea {
+  /* height: 100%; */
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  /* padding-left: 15px; */
+  font-size: 15px;
+  margin-top: 57px; /* 34px */
+  margin-right: 15px;
+  padding: 5px;
+}
+textarea {
+    resize: none;
+    height: fit-content;
+    /* margin: auto; */
+}
+form .page .field .price input {
+  /* height: 100%; */
+  width: 85%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  /* padding-left: 15px; */
+  font-size: 15px;
+  margin-top: 5px;
+  margin-right: 15px;
+  padding: 5px;
+}
+form .page .field .date input {
+  /* height: 100%; */
+  width: 84%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  /* padding-left: 15px; */
+  font-size: 15px;
+  margin-top: 5px;
+  margin-right: 15px;
+  padding: 5px;
+}
+form .page .field select{
+  width: 15%;
+  padding-left: 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.form-radio {
+  /* width: 100%; */
+  margin-top: 5px;
+  margin-left: 30px;
+  /* margin-right: 30px;
+  padding-right: 100px; */
+  /* padding-left: 30px; */
+  /* font-size: 18px; */
+}
+form .page .field p {
+  width: 35%;
+  /* border: 20px; */
+  font-size: 15px;
+  margin-top: 5px;
+  /* margin-right: 10px; */
+}
+form .page .fieldbutton button{
+  width: 80%;
+  height: calc(100% + 5px);
+  /* border: none; */
+  border: 0.2rem outset grey;
+  background: blue;
+  margin-top: -20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+form .page .fieldbutton button:hover{
+  background: #000;
+}
+form .page .btns button.prev:hover{
+  background: #000;
+}
+form .page .btns button.next:hover{
+  background: #000;
+}
+form .page .btns button.submit:hover{
+  background: #000;
+}
+form .page .btns button{
+  margin-top: -60px!important;
+}
+form .page .btns button.prev{
+  margin-right: 3px;
+  font-size: 17px;
+  background: orange;
+}
+form .page .btns button.next{
+  margin-left: 3px;
+  background: blue;
+}
+form .page .btns button.submit{
+    margin-left: 3px;
+    background: green;
+}
+.containerstep .progress-bar{
+  display: flex;
+  margin: 40px 0;
+  user-select: none;
+}
+.containerstep .progress-bar .step{
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.containerstep .progress-bar .step p{
+  font-weight: 500;
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 8px;
+}
+.containerstep .progress-bar .step .text p{
+  font-weight: 500;
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 5px;
+}
+.progress-bar .step .bullet{
+  height: 25px;
+  width: 25px;
+  border: 2px solid #000;
+  background: blue;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+}
+.progress-bar .step .bullet.active{
+  border-color: blue;
+  background: green;
+}
+.progress-bar .step .bullet span{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+}
+/* .progress-bar .step .bullet span.active{
+  color: green;
+  transition: 0.2s linear;
+} */
+.progress-bar .step .bullet.active span{
+  display: none;
+}
+.progress-bar .step .bullet:before,
+.progress-bar .step .bullet:after{
+  position: absolute;
+  content: '';
+  bottom: 9px;
+  right: -131px;
+  left: 26px;
+  height: 3px;
+  width: 554%; /* 600% */
+  background: #262626;
+}
+.progress-bar .step .bullet.active:after{
+  background: green;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.progress-bar .step:last-child .bullet:before,
+.progress-bar .step:last-child .bullet:after{
+  display: none;
+}
+.progress-bar .step p.active{
+  color: blue;
+  transition: 0.2s linear;
+}
+.progress-bar .step .text p.active{
+  color: blue;
+  transition: 0.2s linear;
+}
+.progress-bar .step .fa{
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.progress-bar .step .fa.active{
+  display: block;
+  color: #fff;
+}
+    </style>
+  </head>
+  <body>
+    <div class="containerstep">
+      <img src="ECTLogo.png" alt="ECT Logo">
+      <header>Euro-Circuit Technology Sdn Bhd <br> Monitoring Form</header>
+      <p>We would love to hear your feedback on how we <br> can improve your experience!</p>
+      <div class="progress-bar">
+        <div class="step">   
+<div class="bullet">
+            <span>1</span>
+          </div>
+<div class="fa fa-check"></div> <!-- <div class="check fas fa-check"></div> -->
+          <div class="text">
+          <p style="color: blue;">
+Agent Information</p>
+          </div>
+</div>
+<div class="step">
+<div class="bullet">
+            <span>2</span>
+          </div>
+<div class="fa fa-check"></div> <!-- <div class="check fas fa-check"></div> -->
+          <div class="text">
+          <p>
+Current Client</p>
+</div>
+</div>
+<div class="step">
+<div class="bullet">
+            <span>3</span>
+          </div>
+<div class="fa fa-check"></div> <!-- <div class="check fas fa-check"></div> -->
+          <div class="text">
+          <p>
+Proposed Client</p>
+</div>
+</div>
+<div class="step">
+<div class="bullet">
+            <span>4</span>
+          </div>
+<div class="fa fa-check"></div> <!-- <div class="check fas fa-check"></div> -->
+          <div class="text">
+          <p>
+Terminated Client</p>
+</div>
+</div>
+</div></div>
+<div class="h-divider">
+    <div class="shadow"></div>
+    </div> <br>
+    <div class="container">
+<div class="form-outer"><!-- https://smartforms.dev/submit/6009281bb81854118fd40590 -->
+  <form action="https://getform.io/f/0de4b190-e7f7-4a6b-9bb5-a5d69adcdcc1" method="POST" name="AgentForm2" autocomplete="on"><!-- https://usebasin.com/f/9a02780b8ac8 -->
+    <!-- https://api.sheetmonkey.io/form/qHuaAwwKkuaKNCrEc7dW7Y --><!-- https://formcarry.com/s/s7QzdHkVkN --><!-- https://getform.io/f/e86dff7c-7539-4267-9946-50973dbcdc42 -->
+    <div class="page slide-page">
+            <div class="title">
+1. Agent Information:</div>
+<hr class="line">
+<div class="field">
+              <div class="label">
+1.1 Agent Name</div>
+<input type="text" name="1.1 Agent Name" placeholder="Insert your company name" autofocus required><!-- entry.1591633300 -->
+            </div>
+<div class="field">
+              <div class="label">
+1.2 Agent PIC Info</div>
+<input type="text" name="1.2 Agent PIC Info (Name)" placeholder="Insert PIC name of company" required><!-- entry.814088916 -->
+<input type="text" name="1.2 Agent PIC Info (Position)" placeholder="Insert PIC position in company" required><!-- entry.326955045 -->
+            </div>
+<div class="field">
+              <div class="label">
+1.3 Agent Email Address</div>
+  <input type="email" name="1.3 Agent Email Address" placeholder="Insert Agent email address" required><!-- entry.973724716 -->
+              </div>
+<div class="field">
+                <div class="label">
+1.4 Agent Telephone Number</div>
+    <input type="tel" name="1.4 Agent Telephone Number (Phone)" placeholder="Insert Agent phone number" required><!-- entry.1068967873 -->
+    <input type="tel" name="1.4 Agent Telephone Number (Office)" placeholder="Insert Agent office number" required><!-- entry.301921407 -->
+                </div>
+<div class="field">
+                <div class="label">
+1.5 Agent Total Volume Sold (Liter)</div>
+    <input type="number" name="1.5 Agent Total Volume Sold (Liter)" placeholder="Insert the total volume sold (liter) so far" min="10" required><!-- entry.655272901 -->
+                </div>            
+<div class="fieldbutton">
+              <button class="firstNext next">Next</button>
+            </div>
+</div>
+<div class="page">
+            <div class="title">
+2. Current Client:</div>
+<hr class="line">
+<div class="fieldclient">
+              <div class="label">
+2.1 Current Client Info
+</div>
+<p>Fill in the info for all current clients in order as stated in Appointment Letter / Addendum / Agreement</p>
+<!-- entry.1725023966 --><textarea name="2.1 Current Client Info" rows="20" autofocus required>
+2.1.1. a. Client Name:
+             |ABC Sdn Bhd
+        b. Client Market Segment:
+             |Oil & Gas
+        c. Client Location:
+             |Terengganu
+        d. Price Per Liter (USD/RM):
+             |RM82.65
+        e. Cumulative Volume Sold (Liter):
+             |134L
+         f. Client Target Plan (Short Term):
+             |Clean oil tank
+        g. Client Target Achieved:
+             |Cleaned old oil tank
+        h. Client Current Progress:
+             |Cleaning new oil tank
+         i. Client Issues Facing:
+             |Oil tank not cleaned enough
+         j. Client Future Plan (Long Term):
+             |Clean all oil tank
+
+2.1.2. a. Client Name:
+              |
+         b. Client Market Segment:
+              |
+         c. Client Location:
+              |
+         d. Price Per Liter (USD/RM):
+              |
+         e. Cumulative Volume Sold (Liter):
+              |
+          f. Client Target Plan (Short Term):
+              |
+         g. Client Target Achieved:
+              |
+         h. Client Current Progress:
+              |
+          i. Client Issues Facing:
+              |
+          j. Client Future Plan (Long Term):
+              |
+</textarea>
+            </div>
+<!-- <div class="field">
+  <div class="label">
+2.2 New Client Opportunity</div>
+<p>Do you have any <br> proposed client?</p>
+<div class="form-radio">
+  <input type="radio" id="yes" name="2.2 New Client Opportunity" value="Yes" onchange="displayQuestion(this.value)" required>Yes
+  </div><br>
+  <div class="form-radio">
+  <input type="radio" id="no" name="2.2 New Client Opportunity" value="No" onchange="displayQuestion(this.value)" required>No
+  </div>
+  <p>(If no, skip to <br> the last page)</p>
+</div> -->    
+            <div class="fieldbutton">
+<div class="field btns">
+              <button class="prev-1 prev">Previous</button>
+              <button class="next-1 next">Next</button>
+            </div>
+          </div>
+</div>
+<div class="page">
+            <div class="title">
+3. Proposed Client:</div>
+<hr class="line">
+<div class="fieldproposed">
+              <div class="label">
+3.1 Proposed Client Info</div>
+<p>Fill in the info for all proposed clients that are currently penetrating (Leave blank if not relevant)</p>
+<!-- entry.1696159737 --><textarea name="3.1 Proposed Client Info" rows="20" autofocus>
+3.1.1. a. Proposed Client Name:
+            |DEF Sdn Bhd
+        b. Proposed Client Market Segment:
+            |Food manufacturer
+        c. Proposed Client Location:
+            |Klang
+        d. Proposed Price Per Liter (USD/RM):
+            |RM75.42
+        e. Estimated volume to sell (Liter):
+            |347L
+         f. Proposed Client Target Plan (Short Term):
+            |Clean liquid storage
+        g. Proposed Client Target Achieved:
+            |Cleaned old liquid storage
+        h. Proposed Client Current Progress:
+            |Cleaning new liquid storage
+         i. Proposed Client Issues Facing:
+            |Liquid storage not cleaned enough
+         j. Proposed Client Future Plan (Long Term):
+            |Clean all liquid storage
+
+3.1.2. a. Proposed Client Name:
+             |
+         b. Proposed Client Market Segment:
+             |
+         c. Proposed Client Location:
+             |
+         d. Proposed Price Per Liter (USD/RM):
+             |
+         e. Estimated volume to sell (Liter):
+             |
+          f. Proposed Client Target Plan (Short Term):
+             |
+         g. Proposed Client Target Achieved:
+             |
+         h. Proposed Client Current Progress:
+             |
+          i. Proposed Client Issues Facing:
+             |
+          j. Proposed Client Future Plan (Long Term):
+             |
+</textarea>
+            </div>
+            <div class="fieldbutton">
+<div class="field btns">
+              <button class="prev-2 prev">Previous</button>
+              <button class="next-2 next">Next</button>
+            </div>
+          </div>
+</div>
+<div class="page">
+            <div class="title">
+4. Terminated Client</div>
+<hr class="line">
+<div class="fieldterminated">
+<div class="label">
+4.1 List of Terminated Clients (if any)</div>
+<p>Insert the clients that are no longer penetrating and its reason (Leave blank if not relevant)</p>
+<!-- entry.657729347 --><textarea name="4.1 List of Terminated Clients (if any" rows="4">
+4.1.1. Client Name: 
+        |GHI Sdn Bhd
+        Reason: 
+        |Contract not renewed
+
+4.1.2. Client Name: 
+         |
+         Reason: 
+         |
+</textarea>
+</div>
+            <div class="fieldbutton">
+<div class="field btns">
+              <button class="prev-3 prev">Previous</button>
+              <button class="submit" type="submit">Submit</button>
+            </div>
+            </div>
+</div>
+</form>
+</div>
+</div>
+<!-- Somehow I got an error, so I comment the script tag, just uncomment to use -->
+<script>
+    /* const scriptURL = 'https://script.google.com/macros/s/AKfycbz0mqRFeKl4_DIF9imdc6bjwo9XA3bRNhIdcwJgB2e-F4VpGS6M7grd/exec'
+            const form = document.forms['AgentForm']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks so much for giving us feedback!"))
+                .catch(error => console.error('Error!', error.message))
+            }) */
+/*             const button = document.getElementById('submit');
+
+            button.addEventListener('click', async _ => {
+              try {     
+                const response = await fetch('yourUrl', {
+                  method: 'post',
+                  body: {
+                    // Your body
+                  }
+                });
+                console.log('Completed!', response);
+              } catch(err) {
+                console.error(`Error: ${err}`);
+              }
+            }); */
+            /* const scriptURL = 'https://script.google.com/macros/s/AKfycbzS5D3dc70rIDHecrRLt7cu_lO584xJm8v5jQyp65M9GHYLtkMb2wCU/exec'
+            const form = document.forms['AgentForm2']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+                location.reload();
+            }) */
+            const slidePage = document.querySelector(".slide-page");
+            const nextBtnFirst = document.querySelector(".firstNext");
+            const prevBtnSec = document.querySelector(".prev-1");
+            const nextBtnSec = document.querySelector(".next-1");
+            const prevBtnThird = document.querySelector(".prev-2");
+            const nextBtnThird = document.querySelector(".next-2");
+            const prevBtnFourth = document.querySelector(".prev-3");
+            /* const nextBtnFourth = document.querySelector(".next-3");
+            const prevBtnFifth = document.querySelector(".prev-4");
+            const nextBtnFifth = document.querySelector(".next-4");
+            const prevBtnSixth = document.querySelector(".prev-5"); */
+            const submitBtn = document.querySelector(".submit");
+            const progressText = document.querySelectorAll(".step .text p");
+            /* const progressText2 = document.querySelectorAll(".step p"); */
+            const progressNum = document.querySelectorAll(".step .bullet span");
+            const progressCheck = document.querySelectorAll(".step .fa");
+            const bullet = document.querySelectorAll(".step .bullet");
+            let current = 1;
+            
+            nextBtnFirst.addEventListener("click", function(event){
+              event.preventDefault();
+              slidePage.style.marginLeft = "-25%";
+              bullet[current - 1].classList.add("active");
+              
+              progressText[current - 1].classList.add("active");
+              progressText[current].classList.add("active");
+              /* progressNum[current - 1].classList.add("active");
+              progressNum[current].classList.add("active"); */
+              progressCheck[current - 1].classList.add("active");
+              current += 1;
+            });
+            nextBtnSec.addEventListener("click", function(event){
+              event.preventDefault();
+              slidePage.style.marginLeft = "-50%";
+              bullet[current - 1].classList.add("active");
+              
+              progressText[current - 1].classList.add("active");
+              progressText[current].classList.add("active");
+              /* progressNum[current - 1].classList.add("active");
+              progressNum[current].classList.add("active"); */
+              progressCheck[current - 1].classList.add("active");
+              current += 1;
+            });
+            nextBtnThird.addEventListener("click", function(event){
+              event.preventDefault();
+              slidePage.style.marginLeft = "-75%";
+              bullet[current - 1].classList.add("active");
+              
+              progressText[current - 1].classList.add("active");
+              progressText[current].classList.add("active");
+              /* progressNum[current - 1].classList.add("active");
+              progressNum[current].classList.add("active"); */
+              progressCheck[current - 1].classList.add("active");
+              current += 1;
+            });
+            /* nextBtnFourth.addEventListener("click", function(event){
+                event.preventDefault();
+                slidePage.style.marginLeft = "-100%";
+                bullet[current - 1].classList.add("active");
+                progressCheck[current - 1].classList.add("active");
+                progressText2[current - 1].classList.add("active");
+                current += 1;
+              });
+            nextBtnFifth.addEventListener("click", function(event){
+                event.preventDefault();
+                slidePage.style.marginLeft = "-125%";
+                bullet[current - 1].classList.add("active");
+                progressCheck[current - 1].classList.add("active");
+                progressText2[current - 1].classList.add("active");
+                current += 1;
+              }); */
+            submitBtn.addEventListener("click", function(){
+              bullet[current - 1].classList.add("active");
+              progressCheck[current - 1].classList.add("active");
+              progressText[current - 1].classList.add("active");
+              current += 1;
+              /* setTimeout(function(){
+                alert("Thanks so much for giving us feedback!");
+                location.reload();
+              },800); */
+            });
+            
+            prevBtnSec.addEventListener("click", function(event){
+              event.preventDefault();
+              slidePage.style.marginLeft = "0%";
+              bullet[current - 2].classList.remove("active");
+              
+              progressText[current - 1].classList.remove("active");
+              /* progressNum[current - 1].classList.remove("active"); */
+              progressCheck[current - 2].classList.remove("active");
+              current -= 1;
+            });
+            prevBtnThird.addEventListener("click", function(event){
+              event.preventDefault();
+              slidePage.style.marginLeft = "-25%";
+              bullet[current - 2].classList.remove("active");
+              
+              progressText[current - 1].classList.remove("active");
+              /* progressNum[current - 1].classList.remove("active"); */
+              progressCheck[current - 2].classList.remove("active");
+              current -= 1;
+            });
+            prevBtnFourth.addEventListener("click", function(event){
+              event.preventDefault();
+              slidePage.style.marginLeft = "-50%";
+              bullet[current - 2].classList.remove("active");
+              
+              progressText[current - 1].classList.remove("active");
+              /* progressNum[current - 1].classList.remove("active"); */
+              progressCheck[current - 2].classList.remove("active");
+              current -= 1;
+            });
+            /* prevBtnFifth.addEventListener("click", function(event){
+                event.preventDefault();
+                slidePage.style.marginLeft = "-75%";
+                bullet[current - 2].classList.remove("active");
+                progressCheck[current - 2].classList.remove("active");
+                progressText2[current - 2].classList.remove("active");
+                current -= 1;
+              });
+            prevBtnSixth.addEventListener("click", function(event){
+                event.preventDefault();
+                slidePage.style.marginLeft = "-100%";
+                bullet[current - 2].classList.remove("active");
+                progressCheck[current - 2].classList.remove("active");
+                progressText2[current - 2].classList.remove("active");
+                current -= 1;
+              }); */
+            
+            /*   function displayQuestion(answer) {
+                
+                document.getElementById(answer + 'Question').style.display = "block";
+              
+                if (answer == "no") { // hide the div that is not selected
+              
+                  document.querySelector(".next-2").style.display = "none";
+                  document.querySelector(".next-3").style.display = "none";
+                  document.querySelector(".prev-4").style.display = "none";
+                  document.querySelector(".next-4").style.display = "none";
+                  document.querySelector(".prev-5").style.display = "none";
+                } else if (answer == "yes") {
+              
+                  document.querySelector(".next-2").style.display = "block";
+                  document.querySelector(".next-3").style.display = "block";
+                  document.querySelector(".prev-4").style.display = "block";
+                  document.querySelector(".next-4").style.display = "block";
+                  document.querySelector(".prev-5").style.display = "block";
+              
+                }
+              
+              }
+               */
+</script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+  </body>
+</html>
