@@ -398,7 +398,7 @@ form .page .btns button.submit{
 .progress-bar .step .fa{
   position: absolute;
   left: 50%;
-  top: 20%;
+  top: 15%;
   font-size: 15px;
   transform: translate(-50%, -50%);
   display: none;
