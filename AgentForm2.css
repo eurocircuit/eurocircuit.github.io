@@ -372,7 +372,7 @@ form .page .btns button.submit{
   /* right: -131px; */
   left: 21px;
   height: 3px;
-  width: 457%; /* 600% */ /* 554% */ /* 410% */
+  width: 458%; /* 600% */ /* 554% */ /* 410% */
   background: #262626;
 }
 .progress-bar .step .bullet.active:after{
