@@ -368,9 +368,9 @@ form .page .btns button.submit{
   content: '';
   bottom: 9px;
   right: -131px;
-  left: 26px;
+  left: 27px;
   height: 3px;
-  width: 420%; /* 600% */ /* 554% */
+  width: 410%; /* 600% */ /* 554% */
   background: #262626;
 }
 .progress-bar .step .bullet.active:after{
