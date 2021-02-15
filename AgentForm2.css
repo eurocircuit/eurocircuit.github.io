@@ -323,6 +323,7 @@ form .page .btns button.submit{
   font-size: 15px;
   color: #000;
   margin-bottom: 5px;
+  margin-right: 5px;
 }
 .progress-bar .step .bullet{
   height: 25px;
