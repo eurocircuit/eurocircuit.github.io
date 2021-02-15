@@ -12,7 +12,7 @@ body{
   justify-content: center;
   flex-direction: column;
   min-height: 100vh;
-  min-width: auto;
+  min-width: 700vh;
   overflow: auto;
   /* background: url("bg.png"), -webkit-linear-gradient(bottom, #0250c5, #d43f8d); */
   background-color: #20bf55;
