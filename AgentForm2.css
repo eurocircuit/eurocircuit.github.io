@@ -22,9 +22,8 @@ body{
   background: green;
 }
 .containerstep{
-  width: 100%;
   margin-top: 30px;
-  max-width: 658px;
+  max-width: 547px;
   margin: 0 auto;
   background: #fff;
   text-align: center;
@@ -330,7 +329,7 @@ form .page .btns button.submit{
   font-size: 15px;
   color: #000;
   margin-bottom: 5px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 .progress-bar .step .bullet{
   height: 25px;
@@ -370,7 +369,7 @@ form .page .btns button.submit{
   right: -131px;
   left: 26px;
   height: 3px;
-  width: 554%; /* 600% */
+  width: 420%; /* 600% */ /* 554% */
   background: #262626;
 }
 .progress-bar .step .bullet.active:after{
