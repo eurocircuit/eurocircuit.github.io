@@ -24,7 +24,7 @@ body{
 .containerstep{
   margin-top: 30px;
   max-width: 547px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   background-color: #fff;
   text-align: center;
   border-radius: 8px;
