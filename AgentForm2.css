@@ -41,8 +41,6 @@ body{
     /* margin-bottom: 30px; */
   }
 .containerstep header{
-  max-width: 547px;
-  position: relative;
   font-size: 35px;
   color: green;
   font-weight: 600;
@@ -314,6 +312,7 @@ form .page .btns button.submit{
   display: flex;
   margin: 40px 0;
   user-select: none;
+  width: 100%;
 }
 .containerstep .progress-bar .step{
   text-align: center;
