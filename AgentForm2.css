@@ -22,9 +22,9 @@ body{
   background: green;
 }
 .containerstep{
-  margin-top: 30px;
+  /* margin-top: 30px; */
   max-width: 547px;
-  /* margin: 30px auto; */
+  margin: 30px auto 0;
   background-color: #fff;
   text-align: center;
   border-radius: 8px;
@@ -33,12 +33,12 @@ body{
 }
 .container{
     max-width: 547px;
-    /* margin: 0 auto; */
+    margin: 0 auto 30px;
     padding: 20px;
     box-shadow: 0px 0px 20px #000000;
     background-color: white;
     border-radius: 8px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
   }
 .containerstep header{
   font-size: 35px;
