@@ -5,6 +5,7 @@
   outline: none;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
+  min-width: 700vh;
 }
 body{
   display: flex;
@@ -12,7 +13,6 @@ body{
   justify-content: center;
   flex-direction: column;
   min-height: 100vh;
-  width: max-content;
   overflow: auto;
   /* background: url("bg.png"), -webkit-linear-gradient(bottom, #0250c5, #d43f8d); */
   background-color: #20bf55;
