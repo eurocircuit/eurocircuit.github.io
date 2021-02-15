@@ -142,6 +142,7 @@ form .page .fieldclient .label{
 }
 form .page .fieldclient p{
   position: absolute;
+  top: 0px;
   font-size: 15px;
 }
 form .page .fieldproposed .label{
@@ -152,6 +153,7 @@ form .page .fieldproposed .label{
 }
 form .page .fieldproposed p{
   position: absolute;
+  top: 0px;
   font-size: 15px;
 }
 form .page .fieldterminated .label{
@@ -162,6 +164,7 @@ form .page .fieldterminated .label{
 }
 form .page .fieldterminated p{
   position: absolute;
+  top: 0px;
   font-size: 15px;
 }
 form .page .field input,
