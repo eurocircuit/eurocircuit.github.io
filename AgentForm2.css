@@ -368,10 +368,10 @@ form .page .btns button.submit{
   position: absolute;
   content: '';
   bottom: 9px;
-  right: -131px;
-  left: 27px;
+  /* right: -131px; */
+  left: 23px;
   height: 3px;
-  width: 410%; /* 600% */ /* 554% */
+  width: 448%; /* 600% */ /* 554% */ /* 410% */
   background: #262626;
 }
 .progress-bar .step .bullet.active:after{
