@@ -150,10 +150,9 @@ form .page .fieldproposed .label{
   font-size: 18px;
   font-weight: 500;
 }
-form .page .fieldproposed p{
-  position: absolute;
-  top: 0px;
+form .page .fieldproposed .label p{
   font-size: 15px;
+  font-weight: 1;
 }
 form .page .fieldterminated .label{
   position: absolute;
@@ -161,10 +160,9 @@ form .page .fieldterminated .label{
   font-size: 18px;
   font-weight: 500;
 }
-form .page .fieldterminated p{
-  position: absolute;
-  top: 0px;
+form .page .fieldterminated .label p{
   font-size: 15px;
+  font-weight: 1;
 }
 form .page .field input,
 form .page .field select {
