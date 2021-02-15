@@ -108,10 +108,11 @@
               progressCheck[current - 1].classList.add("active");
               progressText[current - 1].classList.add("active");
               current += 1;
-              setTimeout(function(){
-                /* alert("Thanks so much for giving us feedback!"); */
+              location.reload();
+              /* setTimeout(function(){
+                alert("Thanks so much for giving us feedback!");
                 location.reload();
-              },800);
+              },800); */
             });
             
             prevBtnSec.addEventListener("click", function(event){
