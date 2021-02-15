@@ -41,6 +41,7 @@ body{
     /* margin-bottom: 30px; */
   }
 .containerstep header{
+  max-width: 547px;
   position: relative;
   font-size: 35px;
   color: green;
