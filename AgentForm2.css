@@ -142,7 +142,7 @@ form .page .fieldclient .label{
 }
 form .page .fieldclient .label p{
   font-size: 15px;
-  font-weight: 250;
+  font-weight: 1;
 }
 form .page .fieldproposed .label{
   position: absolute;
